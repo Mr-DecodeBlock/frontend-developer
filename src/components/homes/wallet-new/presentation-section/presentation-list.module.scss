@@ -1,0 +1,21 @@
+.presentation__list
+{
+    color: black;
+    font-size: 1.625rem;
+    list-style: none;
+}
+
+.presentation__item
+{
+    color: black;
+    margin-top: 1.5rem;
+    font-size: 1.625rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+.presentation__item__number
+{
+    font-weight: 500px;
+}

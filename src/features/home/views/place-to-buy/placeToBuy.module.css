@@ -1,0 +1,355 @@
+.card {
+  position: relative;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Poppins;
+  border-radius: 10px;
+  padding: 5rem 0;
+  box-shadow: 0 4px 53px rgba(255, 168, 15, 0.1);
+}
+.backgraundFix{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(225deg, rgba(64, 47, 17, 0.98) 2.03%, rgba(22, 22, 21, 0.98) 48.67%);
+  z-index: 0;
+  border-radius: 10px;
+}
+.azteca{
+  position: absolute;
+  left: -50em;
+  top: -5rem;
+}
+.flash1{
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    z-index: 1;
+  }
+  .flash2{
+    position: absolute;
+    bottom: -40px;
+    right: -43px;
+    z-index: 1;
+  }
+  .coin1{
+    position: absolute;
+    top: -0.6rem;
+    right: 11rem;
+    z-index: 1;
+  }
+  .coin2{
+    position: absolute;
+    right: -0.8rem;
+    bottom: 19rem;
+    z-index: 1;
+  }
+  .coin3{
+    position: absolute;
+    bottom: -2rem;
+    right: -2.5rem;
+    z-index: 1;
+  }
+  .circule{
+    position: absolute;
+    bottom: 0;
+    right: 26rem;
+    z-index: 1;
+  }
+  .card:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    padding: 1px;
+    border-radius: 10px;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 116, 15, 0.9804),
+      rgba(255, 213, 0, 0.22)
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+  .title{
+    max-width: 29rem;
+    min-height: 28rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    z-index: 1;
+  }
+  .title h4{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.75rem;
+    letter-spacing: -0.06rem;
+  }
+  .title span{
+    color: rgba(255, 168, 15, 0.98);
+  }
+  .title p{
+    color: #CBCBCB;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+  .rectangleContainer{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3rem;
+    z-index: 1;
+
+  }
+  .rectangle{
+    backdrop-filter: blur(126px);
+    width: 7.8125rem;
+    height: 3.6875rem;
+    border-radius: 0.625rem;
+    background: linear-gradient(136deg, #D9D9D9 0%, rgba(217, 217, 217, 0.28) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(255, 168, 15, 0.96);
+  }
+  .rightCard{
+    width: 29.9375rem;
+    height: 31.6875rem;
+    flex-shrink: 0;
+    border-radius: 1.875rem;
+    background: rgba(0, 0, 0, 0.30);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.25rem 3rem 3.3rem 3rem;
+    z-index: 2;
+  }
+  .dropdown{
+    width: 100%;
+    height: 3rem;    
+    border-radius: 1.25rem;
+    background: rgba(217, 217, 217, 0.20);
+    backdrop-filter: blur(15px);
+    padding: 0.38rem 1.37rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .item{
+    width: 8.3125rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem;
+    color: rgba(255, 255, 255, 0.98);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .item:hover{
+    background-color: #ffffff1c;
+  }
+  .itemSelect{
+    background-color: #FFF;
+    width: 8.3125rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.25rem;
+    color: rgba(255, 168, 15, 0.98);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .midle{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .coinContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .input {
+    appearance: none;
+    border-top-left-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+    border: 1px solid rgba(255, 168, 15, 0.98);
+    background: #000;
+    outline: 0;
+    font: inherit;
+    width: 100%;
+    height: 3.6875rem;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    padding: 1rem;
+  }
+  .select {
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    border: 1px solid rgba(255, 168, 15, 0.98);
+    background: rgba(255, 168, 15, 0.98);
+    color: white;
+    padding: 5px;
+    height: 3.6875rem;
+    text-align: center;
+    width: 9.3875rem;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+  }
+.listContainer{
+    position: relative;
+    padding: 1.06rem 2.06rem;
+    
+}
+.listItems{
+    list-style-type: none;
+    color: rgba(255, 168, 15, 0.98);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+}
+.listItems::before{
+    content: "";
+    display: inline-block;
+    width: 8px; /* Ajusta el tamaño del bullet */
+    height: 8px; /* Ajusta el tamaño del bullet */
+    background-color: white; /* Color blanco del bullet */
+    border-radius: 50%;
+    margin-right: 0.56rem; /* Espacio entre el bullet y el texto */
+}
+.line{
+    position: absolute;
+    border: 1px solid #fff;
+    height: 5.0625rem;
+    top: 0.55rem;
+    left: 2.25rem;
+}
+  .button{
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.625rem;
+    background-color: #ffa80f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.98);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .button:hover{
+    opacity: 0.7;
+  }
+  @media screen and (max-width: 1270px){
+    .title{
+      max-width: 21.75rem;
+    }
+    .title h4{
+      font-size: 2.25rem;
+      line-height: 2.75rem;
+      letter-spacing: -0.045rem;
+    }
+    .title p{
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+    }
+    .rightCard{
+      width: 21.625rem;
+      padding: 2.25rem 1.19rem 3rem 1.19rem;
+      z-index: 1;
+    }
+    .coin1{
+      scale: 0.8;
+    }
+    .coin2{
+      scale: 0.8;
+    }
+    .circule{
+      scale: 0.8;
+    }
+  }
+  @media screen and (max-width: 900px){
+    .card{
+      display: flex;
+      flex-direction: column;
+    }
+    .rectangleContainer{
+      display: none;
+    }
+    .title{
+      width: 100%;
+      min-height: auto;
+      text-align: center;
+    }
+    .rightCard{
+      width: 29.9375rem;
+      padding: 2.25rem 3rem 3.3rem 3rem;
+      margin-top: 2.75rem;
+        z-index: 1;
+    }
+    .coin1{
+      top: 18rem;
+      right: 20rem;
+    }
+  }
+  @media screen and (max-width: 630px){
+    .circule{
+      display: none;
+    }
+    .coin1{
+      right: 15rem;
+    }
+  }
+  @media screen and (max-width: 560px){
+    .rightCard{
+      width: 21.625rem;
+      padding: 2.25rem 1.19rem 3rem 1.19rem;
+      z-index: 1;
+    }
+    .coin1{
+      right: 10rem;
+    }
+  }

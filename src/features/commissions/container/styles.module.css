@@ -1,0 +1,19 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.25rem;
+  gap: 5.625rem
+}
+
+@media screen and (min-width: 992px) {
+  .page {
+    margin: 0 6.25rem;
+    gap: 11.25rem
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .page {
+    margin: 0 6.25rem;
+  }
+}

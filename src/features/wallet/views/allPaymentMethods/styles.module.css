@@ -1,0 +1,216 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  row-gap: 50px;
+  padding: 5.6rem 6.25rem;
+}
+
+.sunImage {
+  display: none;
+}
+
+.circule {
+  position: absolute;
+  display: flex;
+  scale: 1.2;
+  right: -4rem;
+  bottom: -9rem;
+}
+
+.circule2 {
+  position: absolute;
+  display: flex;
+  scale: 1.2;
+  top: 0;
+  left: 0;
+}
+
+.wheel1 {
+  position: absolute;
+  display: flex;
+  scale: 1;
+  right: -25rem;
+  bottom: -6rem;
+}
+
+.wheel2 {
+  position: absolute;
+  display: flex;
+  scale: 1.2;
+  top: -2rem;
+  left: -13rem;
+}
+
+.backgroundImage1 {
+  position: absolute;
+  scale: 1;
+  bottom: 3rem;
+}
+
+.backgroundImage2 {
+  position: absolute;
+  scale: 1;
+  bottom: 1.5rem;
+}
+
+.titleContainer {
+  width: 665px;
+}
+
+.subtitle {
+  color: rgba(255, 168, 15, 0.98);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.titles {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 48px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.statics {
+  display: block;
+}
+
+.methodsImage {
+  display: none;
+}
+
+.methods {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .backgroundImage1 {
+    scale: 1.3;
+    bottom: 6.5rem;
+  }
+
+  .backgroundImage2 {
+    scale: 1.3;
+    bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    display: none;
+  }
+
+  /* .methods{
+      display: none;
+    }
+    .methodsImage{
+      display: flex;
+      width: 90%;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 0;
+    }
+    .circule{
+      scale: 0.5;
+      bottom: -7rem;
+    }
+    .circule2{
+      scale: 0.5;
+      top: 28rem;
+      left: -5rem;
+    }
+    .wheel1{
+      position: absolute;
+      display: flex;
+      scale: 0.5;
+      right: -12.5em;
+      bottom: -6rem;
+    }
+    .wheel2{
+      position: absolute;
+      display: flex;
+      scale: 0.5;
+      top: 22rem;
+      left: -13rem;
+    } */
+}
+
+/* @media screen and (max-width: 700px) {
+    .container{
+      align-items: left;
+      width: 100%;
+      padding: 6rem 1rem;
+    }
+    .titles{
+      width: auto;
+  }
+  .titles span {
+    text-align: left;
+    line-height: 1.5rem;
+  }
+
+  .titles p {
+    text-align: left;
+    line-height: 4.5rem;
+  }
+  .backgroundImage1{
+    scale: 3;
+    bottom: 15rem;
+}
+.backgroundImage2{
+  scale: 3;
+  bottom: 13.5rem;
+}
+
+  } */
+/* @media screen and (max-width: 1440px) {
+    .sunImage{
+      position: absolute;
+      display: flex;
+      right: 0;
+      bottom: -7rem;
+    }
+    .circule{
+      display: none;
+    }
+
+  }
+  @media screen and (max-width: 1300px) {
+    .titles{
+      display: none;
+  }
+  .container{
+    margin-bottom: -200px;
+  }
+  }
+
+  @media screen and (min-width: 1024px) {
+
+    .animation {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+  
+    .titles{
+        width: 100%;
+    }
+    .titles span {
+        font-size: 16px;
+      }
+    
+      .titles p {
+        font-size: 36px;
+        line-height: 50px;
+      }
+
+
+} */

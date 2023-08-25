@@ -1,0 +1,307 @@
+.flash1 {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+.flash2 {
+  position: absolute;
+  top: 250px;
+  right: -43px;
+}
+.miniCards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+  row-gap: 0px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 10;
+  padding: 1rem;
+  position: relative;
+}
+.servicesLeft{
+  max-width: 34.4375rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.81rem;
+}
+.servicesLeft h4{
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem;
+  letter-spacing: -0.06rem;
+}
+.servicesLeft p{
+  color: rgba(255, 168, 15, 0.98);
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.darkColor{
+  background-color: rgb(23, 23, 23);
+  border-radius: 10px;
+  z-index: 1;
+}
+.servicesCardsContainer {
+  /* margin: 0 10%; */
+  display: flex;
+  position: relative;
+  padding: 2.62rem 2.1rem;
+  /* flex-direction: column; */
+  align-items: center;
+  background-color: var(--background);
+  width: 100%;
+  z-index: 0;
+  /* justify-content: center; */
+  backdrop-filter: blur(10px);
+  background-color: rgba(22, 22, 21, 0.01);
+  border-radius: 22px;
+  gap: 2rem;
+  box-shadow: 0 4px 53px rgba(255, 168, 15, 0.1);
+  opacity: 0.8;
+}
+.servicesCardsContainer:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 2px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 116, 15, 0.9804),
+    rgba(255, 213, 0, 0.22)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.services {
+  /* margin: 0 10%; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 2.62rem 2.75rem;
+  /* flex-direction: column; */
+  align-items: center;
+  background-color: var(--background);
+  width: 100%;
+  z-index: 5;
+  justify-content: center;
+  border-radius: 22px;
+  gap: 2rem;
+  box-shadow: 0 4px 53px rgba(255, 168, 15, 0.1);
+  opacity: 0.8;
+}
+.listContainer{
+  /* background-color: rgba(23, 23, 23, 0.8); */
+  backdrop-filter: blur(10px);
+  background-color: rgba(22, 22, 21, 0.01);
+  z-index: 5;
+}
+.ulTitle{
+  display: flex;
+  width: 100%;
+  text-align: left;
+}
+.ulTitle span{
+  color: #FAFAFA;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.6875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.375rem;
+}
+.services:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 2px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 116, 15, 0.9804),
+    rgba(255, 213, 0, 0.22)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.text{
+  width: 100%;
+  padding-left: 1.55rem;
+  display: flex;
+  justify-content: space-between;
+}
+.items{
+  color: #FAFAFA;
+font-family: Lato;
+font-size: 1.625rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2rem; /* 123.077% */
+}
+
+.flash1Text {
+  position: absolute;
+  left: -40px;
+  top: -1.5rem;
+  z-index: 0;
+}
+.flash2Text {
+  position: absolute;
+  right: -15px;
+  top: 64px;
+  z-index: 0;
+}
+.textStadisticsContainer {
+  display: flex;
+  justify-content: center;  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  margin: 0;
+
+}
+
+.textStadisticsContainer h1 {
+  font-size: 4.75rem;
+}
+.textStadisticsContainer span {
+  color: rgba(255, 168, 15, 0.98);
+  font-size: 4.75rem;
+}
+
+@media screen and (max-width: 1240px) {
+  .servicesLeft{
+    width: 35%;
+    padding: 0;
+  }
+  .servicesLeft h4{
+    font-size: 2.5rem;
+    line-height: 40px;
+  }
+  .servicesLeft p{
+    font-size: 1.2rem;
+  }
+  .miniCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    row-gap: 0px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 10;
+    padding: 1rem;
+    position: relative;
+  }
+  .text ul{
+
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .services{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .servicesCardsContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 4.22rem 2rem;
+    width: 100%;
+  }
+  .servicesLeft{
+    max-width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 100%;
+  }
+
+  .miniCards{
+    gap: 10rem;
+    row-gap: 5rem;
+  }
+  .text ul{
+
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .flash2{
+    display: none;
+  }
+  .services{
+    padding: 4.22rem 1rem;
+  }
+  .servicesCardsContainer{
+    padding: 4.22rem 3rem;
+  }
+  .miniCards{
+    row-gap: 5rem;
+  }
+
+  .items ul li {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 795px) {
+  .textStadisticsContainer h1 {
+    font-size: 4rem;
+  }
+  .textStadisticsContainer span {
+    color: rgba(255, 168, 15, 0.98);
+    font-size: 4rem;
+  }
+  .miniCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    row-gap: 0px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 10;
+    padding: 1rem;
+    position: relative;
+  }
+}
+@media screen and (max-width: 600px) {
+  .services{
+    padding: 2rem 2rem;
+    gap: 0rem;
+  }
+.servicesCardsContainer{
+    padding: 2.5rem 2.9rem;
+    gap: 1rem;
+  }
+  .miniCards{
+    grid-template-columns: 1fr;
+    row-gap: 0rem;
+  }
+  .servicesLeft h4{
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    letter-spacing: -0.045rem;
+  }
+  .servicesLeft p{
+    font-size: 1.25rem;
+    line-height: 1.875rem; /* 150% */
+  }
+}

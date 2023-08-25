@@ -1,0 +1,160 @@
+.paymentMethod {
+  backdrop-filter: blur(10px);
+  background-color: rgba(22, 22, 21, 0.01);
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  font-family: Poppins;
+  border-radius: 22px;
+  box-shadow: 0 4px 53px rgba(255, 168, 15, 0.1);
+  padding: 5rem 0rem 0rem 0rem;
+  margin: 7.25rem 0;
+
+  /* margin: 100px 0; */
+
+}
+
+.paymentMethod:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 1px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom,
+      rgba(255, 116, 15, 0.9804),
+      rgba(255, 213, 0, 0.22));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.textContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textSection {
+  max-width: 41.5625rem;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.textSection_title {
+  max-width: 36.375rem;
+}
+
+.textSection_title h3 {
+  color: #fafafa;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem;
+  /* 125% */
+  letter-spacing: -0.06rem;
+}
+
+.textSection_description {
+  width: 100%;
+
+}
+
+.textSection_description p {
+  color: #fafafa;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.375rem;
+  /* 126.667% */
+}
+
+.conteinerSlider {
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.imgDifusser {
+  position: absolute;
+  z-index: 10;
+  width: 20%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+  .imgDifusser {
+    width: 13%;
+  }
+}
+
+.imgDifusserLeft {
+  top: -7%;
+  left: -1%;
+  transform: rotate(-180deg);
+}
+
+.imgDifusserRight {
+  top: -7%;
+  right: -1%;
+}
+
+.slider {
+  width: 98%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.flash1 {
+  position: absolute;
+  top: -36px;
+  left: -40px;
+}
+
+.flash2 {
+  position: absolute;
+  top: 250px;
+  right: -43px;
+}
+
+@media screen and (max-width: 700px) {
+  .flash2 {
+    display: none;
+  }
+
+  .imgDifusserLeft {
+    left: 20%;
+    top: -42%;
+    transform: rotate(-90deg);
+  }
+
+  .imgDifusserRight {
+    right: 20%;
+    top: 36%;
+    transform: rotate(90deg);
+  }
+
+  .conteinerSlider {
+    display: flex;
+    width: 65%;
+  }
+
+  .slider {
+    width: 50%;
+  }
+
+  .paymentMethod_subtitle {
+    font-size: 24px;
+    width: 95%;
+  }
+}

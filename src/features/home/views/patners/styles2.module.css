@@ -1,0 +1,83 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   gap: 4.69rem;
+   padding: 7rem 0 0 0;
+   margin-bottom: 10.69rem;
+  }
+  .none{
+    display: none;
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 49.25rem;
+    margin: 0 auto;
+  }
+  
+  .title p {
+    color: #FAFAFA;
+    font-family: Poppins;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.75rem;
+    letter-spacing: -0.06rem;
+    text-align: center;
+  }
+  
+  .keenSlider {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .keenSlider__slide {
+    flex-shrink: 0;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .keenSlider__slide img {
+    width: 65%;
+    height: auto;
+}
+  .slider {
+    display: flex;
+    width: 98%;
+    margin: auto;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider::before,
+  .slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%; /* Ancho del área de desvanecimiento, ajusta según tus preferencias */
+    z-index: 2;
+  }
+  
+  .slider::before {
+    left: 0;
+    background-image: linear-gradient(to left, transparent, #171717);
+  }
+  
+  .slider::after {
+    right: 0;
+    background-image: linear-gradient(to right, transparent, #171717);
+  }
+ 
+  @media screen and (max-width: 640px) {
+    .container {
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  

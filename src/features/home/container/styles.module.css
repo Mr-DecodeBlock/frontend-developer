@@ -1,0 +1,27 @@
+
+.margin {
+    padding: 0 6.25rem;
+}
+
+.developer {
+    padding: 6.25rem 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .margin {
+        padding: 0 1rem;
+    }
+
+    .developer {
+        padding: 3rem 0;
+        padding-bottom: 6.25rem;
+    }
+}
+
+/* @media screen and (min-width: 1536px) {
+    .margin {
+        margin: 0 6.25rem;
+    }
+}
+     */

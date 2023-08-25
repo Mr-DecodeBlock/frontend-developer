@@ -1,0 +1,10 @@
+.principalBackground {
+    background-image: url('../../../../public/assets/img/not-found/circles.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 14rem;
+    /*padding: 30rem;
+    margin-bottom: 45rem;
+    margin-top: 52rem;*/
+}

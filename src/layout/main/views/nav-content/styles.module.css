@@ -1,0 +1,131 @@
+.container {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.875rem;
+  position: relative;
+  /* margin-right: 16rem; */
+}
+
+.link, .linkSubMenu {
+  text-decoration: none;
+  list-style: none;
+}
+
+.link a {
+  text-decoration: none;
+}
+.navLink{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.even {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.hoverImage{
+  position: absolute;
+  opacity: 0;
+}
+.hoverTrue{
+  position: absolute;
+  top: 100%;
+  opacity: 1;
+}
+.navLink:hover .hoverImage {
+  top: 100%;
+  opacity: 1;
+}
+.transparentDiv{
+  display: none;
+  position: absolute;
+  right: 0;
+  padding: 1.1rem 0;
+}
+.submenu {
+  position: relative;
+  display: flex;
+  gap: 7rem;
+  min-width: 15rem;
+  width: auto;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(255, 168, 15, 0.98);
+  background-color: rgba(36, 29, 29, 0.99);
+  z-index: 99;
+  padding: 1.5rem;
+}
+.submenu2 {
+  position: relative;
+  display: flex;
+  gap: 7rem;
+  min-width: 15rem;
+  width: auto;
+  max-height: 4.5rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(255, 168, 15, 0.98);
+  background-color: rgba(36, 29, 29, 0.99);
+  z-index: 99;
+  padding: 1.5rem;
+}
+.subMenuContainer{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  gap: 1.7rem;
+}
+.itemTitle{
+  color: rgba(255, 168, 15, 0.98);
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.itemTitle:hover {
+  color: #fafafa;
+  transition: 0.3s ease-in-out;
+}
+.items{
+  width: 12.5rem;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.items:hover {
+  color: #ffa80f;
+  transition: 0.3s ease-in-out;
+}
+.link:hover .transparentDiv   {
+  display: flex;
+  top: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    /* margin-right: 16rem; */
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+  }
+}

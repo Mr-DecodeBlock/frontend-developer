@@ -1,0 +1,93 @@
+@use "../../utils" as *;
+
+.referrals-sale-container {
+  display: flex;
+  padding: 6.25rem 1.25rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+
+  @media #{$min-sm} {
+    flex-direction: row;
+    padding: 6.25rem;
+  }
+}
+
+.referrals-sale-cta {
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.375rem;
+  align-self: stretch;
+
+  @media #{$min-sm} {
+    flex-shrink: 0;
+  }
+}
+
+.referrals-sale-cta-title {
+  color: #000;
+
+  /* H3/Bold */
+  font-family: Poppins;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem; /* 120% */
+
+  @media #{$min-sm} {
+    font-size: 3.75rem;
+    line-height: 4.5rem;
+  }
+}
+
+.referrals-sale-cta-title-highlight {
+  color: rgba(255, 168, 15, 0.98);
+
+  /* H3/Bold */
+  font-family: Poppins;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+
+  @media #{$min-sm} {
+    font-size: 3.75rem;
+    line-height: 4.5rem;
+  }
+}
+
+.referrals-sale-cta-description {
+  color: #000;
+
+  /* Subtle 2/Regilar */
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 120% */
+}
+
+.referrals-sale-md-image {
+  display: none;
+  padding: 3.5625rem 3.75rem;
+  align-items: center;
+  gap: 0.625rem;
+
+  @media #{$min-lg} {
+    display: flex;
+  }
+}
+
+.referrals-sale-sm-image {
+    display: block;
+    padding: 3.5625rem 3.75rem;
+    align-items: center;
+    gap: 0.625rem;
+    
+    @media #{$min-lg} {
+        display: none;
+    }
+}

@@ -1,0 +1,307 @@
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5.6rem 6.25rem;
+}
+
+.wheel1 {
+    display: none;
+}
+
+.wheel2 {
+    display: none;
+}
+
+.wheel3 {
+    position: absolute;
+    right: -16.5rem;
+    bottom: -7rem;
+}
+
+.wheel4 {
+    position: absolute;
+    left: -16.5rem;
+    top: 0;
+}
+
+.circuleImg {
+    position: absolute;
+    right: 9rem;
+    bottom: 10rem;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1800px;
+
+}
+
+.boxLeft {
+    display: flex;
+    flex-direction: column;
+    max-width: 601px;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.title h6 {
+    color: rgba(255, 168, 15, 0.98);
+    font-family: Lato;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+    /* 123.077% */
+}
+
+.title h3 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+    /* 133.333% */
+}
+
+.miniCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.miniCard {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: auto;
+    font-family: Poppins;
+    padding: 1rem;
+    gap: 1.2rem;
+    backdrop-filter: blur(10px);
+    background-color: rgba(22, 22, 21, 0.01);
+}
+
+.miniCard:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    padding: 2px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom,
+            rgba(255, 116, 15, 0.9804),
+            rgba(255, 213, 0, 0.22));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.description {
+    width: 85%;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    /* 123.077% */
+}
+
+.circule {
+    width: 73px;
+    height: 73px;
+    background-color: rgba(53, 53, 53, 1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-family: Lato;
+    color: rgba(255, 168, 15, 0.98);
+}
+
+.boxRight {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: rgba(255, 168, 15, 0.98);
+    border: 1px solid rgba(255, 168, 15, 0.98);
+    border-radius: 12px;
+    width: 22.4375rem;
+    color: rgba(255, 255, 255, 0.98);
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 40px;
+    cursor: pointer;
+    box-shadow: 10px 12px 40px rgba(255, 168, 15, 0.2);
+}
+
+.btn:hover {
+    background-color: #171717;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1440px) {
+    .wheel1 {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .wheel2 {
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: -7rem;
+    }
+
+    .wheel3 {
+        display: none;
+    }
+
+    .wheel4 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1280px) {
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        /* padding: 10% 10%; */
+    }
+
+    .boxLeft {
+        display: flex;
+        flex-direction: column;
+        max-width: none;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+
+    .boxRight {
+        order: 1;
+        /* Cambiar el orden para que boxRight quede arriba */
+    }
+
+    .boxLeft {
+        order: 2;
+        /* Cambiar el orden para que boxLeft quede abajo */
+    }
+
+    .wheel1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .wheel2 {
+        position: absolute;
+        right: 0;
+        bottom: 35rem;
+    }
+
+    .circuleImg {
+        position: absolute;
+        right: 11rem;
+        bottom: 56rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .wheel1 {
+        position: absolute;
+        scale: 0.8;
+        left: -1.5rem;
+        top: 0;
+    }
+
+    .wheel2 {
+        position: absolute;
+        scale: 0.8;
+        right: -1.5rem;
+        bottom: 35rem;
+    }
+
+    .circuleImg {
+        position: absolute;
+        scale: 0.6;
+        right: 4rem;
+        bottom: 55rem;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 2rem 1rem 5.6rem 1rem;
+    }
+
+    .box {
+        padding: 10% 0;
+    }
+
+    .boxLeft {
+        gap: 3rem;
+    }
+
+    .title h3 {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .buttonContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .wheel1 {
+        position: absolute;
+        scale: 0.4;
+        left: -4rem;
+        top: -5rem;
+    }
+
+    .wheel2 {
+        position: absolute;
+        scale: 0.37;
+        right: -4.4rem;
+        bottom: 41rem;
+    }
+
+    .circuleImg {
+        position: absolute;
+        scale: 0.4;
+        right: -2rem;
+        bottom: 55rem;
+    }
+}

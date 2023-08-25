@@ -1,0 +1,22 @@
+.page{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+}
+
+.margin {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 5.625rem
+}
+
+
+@media screen and (min-width: 1024px) {
+    .margin {
+        padding: 0 6.25rem;
+        gap: 11.25rem
+    }
+}

@@ -1,0 +1,212 @@
+.container {
+    position: relative;
+    margin: 7.5rem 0;
+}
+
+.bigGear {
+    position: absolute;
+    top: -18rem;
+    right: -25rem;
+    transform: rotate(-30deg);
+}
+
+.documentation {
+    /* margin: 0 10%; */
+    /* background-color: var(--background); */
+    backdrop-filter: blur(10px);
+    background-color: rgba(23, 23, 23, 1);
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    font-family: Poppins;
+    border-radius: 22px;
+    box-shadow: 0 4px 53px rgba(255, 168, 15, 0.1);
+}
+
+.documentation:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    padding: 1px;
+    border-radius: 22px;
+    background: linear-gradient(to bottom,
+            rgba(255, 116, 15, 0.9804),
+            rgba(255, 213, 0, 0.22));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.documentationTitle {
+    font-size: 40px;
+}
+
+.flash1 {
+    position: absolute;
+    width: 15%;
+    top: 13%;
+    right: 22%;
+}
+
+.flash2 {
+    position: absolute;
+    width: 13%;
+    top: 33%;
+    right: 5%;
+}
+
+.flash3 {
+    position: absolute;
+    width: 10%;
+    top: 53%;
+    right: 29%;
+}
+
+@media (max-width: 991px) {
+    .flash1 {
+        position: absolute;
+        width: 30%;
+        top: -2%;
+        right: 42%;
+    }
+
+    .flash2 {
+        position: absolute;
+        width: 25%;
+        top: 17%;
+        right: 22%;
+    }
+
+    .flash3 {
+        position: absolute;
+        width: 16%;
+        top: 35%;
+        right: 53%;
+    }
+}
+
+@media (max-width: 850px) {
+    .flash1 {
+        position: absolute;
+        width: 30%;
+        top: -1%;
+        right: 42%;
+    }
+
+    .flash2 {
+        position: absolute;
+        width: 25%;
+        top: 17%;
+        right: 20%;
+    }
+
+    .flash3 {
+        position: absolute;
+        width: 16%;
+        top: 35%;
+        right: 53%;
+    }
+}
+
+@media (max-width: 750px) {
+    .flash1 {
+        position: absolute;
+        width: 30%;
+        top: 2%;
+        right: 42%;
+    }
+
+    .flash2 {
+        position: absolute;
+        width: 25%;
+        top: 17%;
+        right: 17%;
+    }
+
+    .flash3 {
+        position: absolute;
+        width: 16%;
+        top: 35%;
+        right: 53%;
+    }
+}
+
+@media (max-width: 565px) {
+    .flash1 {
+        position: absolute;
+        width: 30%;
+        top: 4%;
+        right: 42%;
+    }
+
+    .flash2 {
+        position: absolute;
+        width: 25%;
+        top: 17%;
+        right: 8%;
+    }
+
+    .flash3 {
+        position: absolute;
+        width: 16%;
+        top: 35%;
+        right: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+    .flash2 {
+        position: absolute;
+        width: 25%;
+        top: 17%;
+        right: 8%;
+    }
+
+    .flash3 {
+        position: absolute;
+        width: 16%;
+        top: 27%;
+        right: 64%;
+    }
+}
+
+@media (max-width: 420px) {
+    .flash2 {
+        position: absolute;
+        width: 25%;
+        top: 17%;
+        right: 12%;
+    }
+
+    .flash3 {
+        position: absolute;
+        width: 16%;
+        top: 22%;
+        right: 64%;
+    }
+}
+
+@media (max-width: 360px) {
+    .flash1 {
+        position: absolute;
+        width: 30%;
+        top: 3%;
+        right: 42%;
+    }
+
+    .flash2 {
+        position: absolute;
+        width: 25%;
+        top: 12%;
+        right: 12%;
+    }
+
+    .flash3 {
+        position: absolute;
+        width: 16%;
+        top: 19%;
+        right: 64%;
+    }
+}

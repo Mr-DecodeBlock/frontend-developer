@@ -1,0 +1,84 @@
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .none{
+    display: none;
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    max-width: 477px;
+    margin: 0 auto;
+  }
+  
+  .title p {
+    color: #fafafa;
+    font-size: 30px;
+    font-family: Poppins;
+    margin-bottom: 50px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: center;
+  }
+  
+  .title span {
+    font-weight: 700;
+  }
+  
+  .keenSlider {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .keenSlider__slide {
+    flex-shrink: 0;
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30rem;
+    width: 98%;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider::before,
+  .slider::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 15%; /* Altura del área de desvanecimiento, ajusta según tus preferencias */
+    z-index: 2;
+  }
+  
+  .slider::before {
+    top: 0;
+    background-image: linear-gradient(to top, transparent, #171717);
+  }
+  
+  .slider::after {
+    bottom: 0;
+    background-image: linear-gradient(to bottom, transparent, #171717);
+  }
+  
+  @media screen and (max-width: 640px) {
+    .container {
+      margin-top: 3.75rem;
+      margin-bottom: 5.5rem;
+    }
+  }
+  

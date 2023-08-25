@@ -1,0 +1,49 @@
+.container {
+    position: relative;
+}
+
+.topLeft {
+    display: none;
+    position: absolute;
+    top: -16px;
+    left: 0;
+}
+
+.topRight {
+    display: none;
+    position: absolute;
+    top: -16px;
+    right: 0px;
+}
+
+.bottomLeft {
+    display: none;
+    position: absolute;
+    bottom: 13rem;
+    left: 0px;
+}
+
+.bottomRight {
+    display: none;
+    position: absolute;
+    bottom: 13rem;
+    right: 0px;
+}
+
+@media screen and (min-width: 1024px) {
+    .topLeft {
+        display: block;
+    }
+
+    .topRight {
+        display: block;
+    }
+
+    .bottomLeft {
+        display: block;
+    }
+
+    .bottomRight {
+        display: block;
+    }
+}

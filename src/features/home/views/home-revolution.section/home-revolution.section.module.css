@@ -1,0 +1,197 @@
+.flash1{
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+.flash2{
+  position: absolute;
+  top: 250px;
+  right: -43px;
+}
+.revolution {
+  margin-bottom: 40px;
+  /* backdrop-filter: blur(126px); */
+  backdrop-filter: blur(10px);
+  background-color: rgba(23, 23, 23, 1);
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Poppins;
+  border-radius: 10px;
+  padding: 4%;
+  box-shadow: 0 4px 53px rgba(255, 168, 15, 0.1);
+}
+.revolution:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 1px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 116, 15, 0.9804),
+    rgba(255, 213, 0, 0.22)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.card-grad {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  width: 321px;
+  height: 290px;
+  padding: 23px 22px;
+  gap: 12px;
+  font-family: Poppins;
+}
+
+.miniCardText{
+  display: flex;
+  flex-direction: column;
+    gap: 12px;
+}
+.card-grad:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 2px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 116, 15, 0.9804),
+    rgba(255, 213, 0, 0.22)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.revolutionTitle {
+  width: 763px;
+}
+.textRevolutionTitle {
+  color: #fafafa;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: Poppins;
+  margin-bottom: 50px;
+  line-height: 60px;
+}
+.orangeBoldTitle {
+  font-weight: 700;
+  color: #ff9356;
+}
+.boldTitle {
+  font-weight: 700;
+}
+
+.revolutionSubTitle {
+  width: 308px;
+}
+.textRevolutionSubTitle {
+  color: #fafafa;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Poppins;
+  margin-bottom: 50px;
+  line-height: 32px;
+}
+.orangeBoldSubTitle {
+  color: #ff9356;
+  font-weight: 700;
+}
+.icon {
+  width: 64px;
+  height: 64px;
+}
+.miniCardBold {
+  color: #ffa80f;
+  font-size: 20px;
+  font-weight: 700;
+}
+.miniCardDescription {
+  color: #fafafa;
+  font-size: 16px;
+  font-weight: 400;
+}
+.more {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+.cardsContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+@media (max-width: 1300px) {
+  .revolution {
+    background: radial-gradient(circle at top, #ffa836ec -15%, rgba(255, 213, 0, 0.22) 8%, rgba(33, 33, 33, 0.40) 15%);
+  }
+  
+  .cardsContainer{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+}
+@media (max-width: 1200px) {
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 65px;
+  }
+  .card-grad {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    padding: 2rem 2rem;
+    gap: 3rem;
+  }  
+  .revolutionTitle {
+    width: auto;
+  }
+  .textRevolutionTitle {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    line-height: 44px;
+  }
+}
+@media (max-width: 600px) {
+  .card-grad {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 321px;
+    height: 290px;
+    padding: 23px 22px;
+    gap: 12px;
+    font-family: Poppins;
+  }
+
+}
+@media (max-width: 500px) {
+  .revolution {
+    background: radial-gradient(circle at top, #ffa836ec -15%, rgba(255, 213, 0, 0.22) 5%, rgba(33, 33, 33, 0.40) 10%);
+  }
+  .revolutionTitle {
+    width: 366px;
+  }
+
+}

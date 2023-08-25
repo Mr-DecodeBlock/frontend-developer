@@ -1,0 +1,11 @@
+export * from './home-revolution.section/home-revolution.section';
+export * from './patners/home-patners.section';
+export * from './section-contact-documentation';
+export * from './section-social-networks';
+export * from './sectionCriptocurrencies/sectionCriptocurrencies';
+export * from './sectionDevelop/sectionDevelopers';
+export * from './sectionDocumentation/sectionDocumentation';
+export * from './sectionHero/home-hero.section';
+export { SectionPaymentMethod } from './sectionPaymentMethod/sectionPaymentMethod';
+export * from './sectionServices/sectionServices';
+export * from './createAccount/createAccount';

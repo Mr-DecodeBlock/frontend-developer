@@ -1,0 +1,118 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerImage {
+    width: 24.375rem;
+    height: 8.57256rem;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+
+.containerText {
+    display: flex;
+    width: 23.875rem;
+    padding: 1.25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.625rem;
+    margin: 0 auto;
+}
+
+.title {
+    color: #FFF;
+    text-align: center;
+
+    /* Display SM/Regular */
+    font-family: Poppins;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.375rem;
+    /* 126.667% */
+}
+
+.paragraph {
+    color: rgba(255, 168, 15, 0.98);
+    text-align: center;
+
+    /* Texto LG/Regular */
+    font-family: Poppins;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+    /* 155.556% */
+}
+
+.button {
+    display: flex;
+    padding: 1rem 2.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.75rem;
+    background: rgba(255, 168, 15, 0.98);
+
+    color: rgba(255, 255, 255, 0.98);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.logoImages {
+    width: 21rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .containerText {
+        width: 51.25rem;
+        /* background-image: url('../../../public/assets/img/not-found/flashes.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; */
+    }
+
+    .title {
+        color: #FFF;
+        text-align: center;
+
+        /* Display LG/Regular */
+        font-family: Poppins;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3.75rem;
+        /* 125% */
+        letter-spacing: -0.06rem;
+    }
+
+    .paragraph {
+        color: rgba(255, 168, 15, 0.98);
+        text-align: center;
+
+        /* Display XS/Regular */
+        font-family: Poppins;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2rem;
+        /* 133.333% */
+    }
+
+    .logoImages {
+        margin-top: 3.87rem;
+        width: 30.93625rem;
+    }
+}
+@media screen and (max-width: 410px){
+    .logoImages {
+        width: 21rem;
+    }
+}

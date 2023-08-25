@@ -1,0 +1,49 @@
+$grid-columns: 3;
+$grid-rows: 3;
+
+.comunity {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.community__block {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat($grid-columns, 1fr); // Columnas
+  grid-template-rows: repeat($grid-rows, 1fr);
+  gap: 10px;
+}
+.img {
+  width: fit-content;
+  cursor: pointer;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.item {
+  cursor: pointer;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+@media screen and (max-width: 780px) {
+  .container {
+    width: 100%;
+    gap: 4rem;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .item {
+    font-size: 0.9rem;
+  }
+}

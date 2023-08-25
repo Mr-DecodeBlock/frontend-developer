@@ -1,0 +1,36 @@
+@use "../../utils" as *;
+
+.referrals-question-container {
+  display: inline-flex;
+  width: 25.875rem;
+  padding: 6.25rem 1.25rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.75rem;
+
+  @media #{$min-sm} {
+    padding: 6.25rem 9.6875rem;
+    width: 100%;
+  }
+}
+
+.referrals-question-title-container {
+  display: flex;
+  width: 32.0625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.referrals-question-title {
+  color: #000;
+  text-align: center;
+
+  /* H3/Bold */
+  font-family: Poppins;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.5rem; /* 120% */
+}

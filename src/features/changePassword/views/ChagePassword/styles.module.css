@@ -1,0 +1,250 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3.5rem;
+}
+.titleContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-top: 2rem;
+  padding-left: 3rem;
+}
+.title {
+  color: #fff;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.leyend p{
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+.backgraund {
+  position: absolute;
+  bottom: -25rem;
+  z-index: 0;
+  opacity: 0.2;
+}
+.title span {
+  color: #faa50f;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.formContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+}
+
+.cardLogin {
+  position: relative;
+  margin-right: 3rem;
+  width: 38.5625rem;
+  /* height: 36.375rem; */
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 5.19rem 7.06rem;
+}
+.arrowContainer{
+  position: absolute;
+  left:   2.19rem;
+  top: 1.87rem;
+  cursor: pointer;
+}
+.worldContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.logoContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.customButton {
+  background-color: rgba(255, 168, 15, 0.98);
+  border: none;
+  color: #fff;
+  width: 100%;
+  height: 3rem;
+}
+.customButton:hover {
+  background-color: rgba(255, 168, 15, 0.8);
+}
+.customCheck {
+  border: none;
+  color: #fff;
+}
+.field {
+  display: flex;
+  width: 100%;
+  height: 3rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  width: 100%;
+  justify-content: center;
+}
+.forgetPassword {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.forgetPassword p {
+  cursor: pointer;
+  color: #fff;
+}
+.checkContainer {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.checkContainer p{
+    color: #fff;
+}
+.label{
+    color: #fff;
+}
+.titleForm {
+  margin: 1rem 0rem;
+  padding: 1rem 0rem;
+}
+.titleForm p{
+  color: #fff;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+.register {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+.register p {
+    color: #fff;
+  }
+.register span {
+  color: #faa50f;
+  cursor: pointer;
+}
+
+.timeRemaining {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.resendCode{
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.resendCode p{
+  color:#faa50f;
+  cursor: pointer;
+}
+
+.resendCode:disabled{
+  color: gray;
+}
+
+.resendCode:disabled p {
+  color: gray;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1200px) {
+  .containerLeft {
+    padding-top: 2rem;
+  }
+  .formContainer {
+   padding-top: 3rem;
+  }
+  .cardLogin {
+    margin-right: 3rem;
+    width: 30rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 3rem;
+  }
+}
+@media (max-width: 1000px) {
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 3.5rem;
+}
+.formContainer {
+  display: flex;
+  padding-top: 3rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0;
+ }
+ .cardLogin{
+  margin-right: 0rem;
+  /* height: 42.37rem; */
+ }
+ .containerLeft{
+  margin-left: 0rem;
+}
+.titleContainer {
+  display: flex;
+  width: 100%;
+  padding: 2rem 2rem;
+  justify-content: center;
+} 
+.worldContainer {
+  margin-top: 0rem;
+  padding: 0rem 0rem;
+}
+}
+@media (max-width: 550px) {
+  .titleContainer {
+    display: flex;
+    width: 100%;
+    padding: 2rem 2rem;
+    justify-content: center;
+  } 
+  .title{
+    font-size: 2.9rem;
+  }
+  .title span {
+    font-size: 3rem;
+  }
+.formContainer{
+  padding: 1rem 1rem;
+}
+  .cardLogin {
+      width: 100%;
+      /* height: 36.375rem; */
+  }
+} 

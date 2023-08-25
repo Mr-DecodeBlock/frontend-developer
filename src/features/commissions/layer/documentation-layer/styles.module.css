@@ -1,0 +1,34 @@
+.container {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  bottom: -40rem;
+  /* left: 0; */
+  right: 0;
+  /* width: 100%; */
+  height: 100%;
+  display: none;
+}
+.topLeft{
+  position: absolute;
+  height: 120rem;
+  width: 120rem;
+  bottom: 130rem;
+  left: -45rem;
+}
+
+.topRight{
+  position: absolute;
+  height: 120rem;
+  width: 120rem;
+  top: 40rem;
+  right: -40rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .icon {
+    display: block;
+  }
+}

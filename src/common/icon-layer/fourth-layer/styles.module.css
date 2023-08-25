@@ -1,0 +1,15 @@
+.container {
+  position: relative;
+}
+
+.topLeft{
+  position: absolute;
+  transform: rotate(-62deg);
+  top:23rem;
+  right: -27rem;
+}
+@media screen and (min-width: 1024px) {
+  .icon {
+    display: block;
+  }
+}

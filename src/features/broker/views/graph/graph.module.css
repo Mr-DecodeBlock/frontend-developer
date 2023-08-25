@@ -1,0 +1,165 @@
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.header{
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.headerText{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 0.69rem;
+}
+.graphName{
+    color:  #FAFAFA;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem;
+}
+.principalPrice p{
+    color: #A7A9AC;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+.principalPrice span{
+    color: rgba(255, 168, 15, 0.98);
+}
+
+.filterContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2.94rem;
+    gap: 1rem;
+}
+.filters{
+    width: auto;
+    height: auto;
+    border-radius: 0.3125rem;
+    background: linear-gradient(0deg, #252525 0%, #252525 100%), linear-gradient(0deg, #252525 0%, #252525 100%), #252525;
+    color: rgba(255, 168, 15, 0.98);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding: 0.63rem 0.88rem 0.56rem 0.88rem;
+}
+.filters:hover{
+    color: #000;
+    background: linear-gradient(0deg, rgba(255, 168, 15, 0.98) 0%, rgba(255, 168, 15, 0.98) 100%), linear-gradient(0deg, #252525 0%, #252525 100%), #252525;
+    cursor: pointer;
+}
+.card{
+    width: 100%;
+    height: 31.9375rem;
+    backdrop-filter: blur(126px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 1.25rem;
+    background-color: #22211e;
+    opacity: 1;
+    padding: 1.6rem 2rem;
+}
+.graph{
+    width: 75%;
+    height: 100%;
+}
+.cardRight{
+    width: 15.125rem;
+    height: 100%;
+    border-radius: 1.25rem;
+    background-color: rgba(32, 29, 25, 0.98);
+    padding: 1.12rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.69rem;
+}
+.title{
+    color: #FAFAFA;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem; 
+}
+.items{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.59rem;
+}
+.text span{
+    color: rgba(255, 168, 15, 0.98);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+.text p{
+    color: #A7A9AC;
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+@media screen and (max-width: 750px){
+    .filterContainer{
+        padding-left: 0;
+    }
+    .card{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        background-color: #a7a9ac00;
+        padding: 0;
+    }
+    .cardRight{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1.69rem;
+    }
+    .itemsContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .filters{
+        padding: 0.62rem 0.7rem 0.56rem 0.7rem;
+    }
+    .graph{
+        width: 100%;
+    }
+}

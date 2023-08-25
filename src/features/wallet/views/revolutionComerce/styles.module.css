@@ -1,0 +1,241 @@
+.container{
+  position: relative;
+  padding: 8rem 6.25rem;
+}
+.flash1{
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+.card{
+  width: 100%;
+  /* background-color: rgba(33, 33, 33, 0.8); */
+  backdrop-filter: blur(10px);
+  background-color: rgba(22, 22, 21, 0.01);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  border-radius: 22px;
+  padding: 4.37rem 3.25rem 5.31rem 3.62rem;
+  box-shadow: 0 4px 53px rgba(255, 168, 15, 0.1);
+}
+.card:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  padding: 1px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 116, 15, 0.9804),
+    rgba(255, 213, 0, 0.22)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.cardTopContainer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.cardBottonContainer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
+  width: 770px;
+  height: 200px;
+
+  text-align: center;
+}
+.header p {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 48px;
+  line-height: 50px;
+  font-weight: 700;
+}
+.header span {
+  color: rgba(255, 168, 15, 0.98);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+.flash1{
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+.bgImageOne{
+  display: none;
+}
+.bgImageOneb{
+  position: absolute;
+  display: flex;
+  z-index: 0;
+  left: -14rem;
+  top:-9.5rem;
+}
+.bgImageTwo{
+  position: absolute;
+  z-index: 0;
+  left: 200px;
+  top:850px;
+}
+@media screen and (max-width: 1440px) {
+  .bgImageOne{
+    position: absolute;
+    display: flex;
+    z-index: 0;
+    left: 0;
+    top:-9.5rem;
+  }
+  .bgImageOneb{
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container{
+    margin-bottom: 50px;
+  }
+  .bgImageTwo{
+    left: 15%;
+    top:700px;
+  }
+  .subContainer {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    padding: 20px;
+  }
+  .cards {
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    padding-top: 50px;
+  }
+  .header{
+    width: 100%;
+  }
+  .titles p {
+    font-size: 40px;
+  }
+  .titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 1rem 1rem;
+  }
+  
+}
+
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+	.header p{
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3rem; /* 180% */
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container{
+    padding: 4.2rem 1rem;
+  }
+  .bgImageTwo{
+    scale: 0.5;
+    top:860px;
+    left: 0;
+  }
+  .bgImageOne{
+    scale: 0.7;
+    z-index: 0;
+    left: -7rem;
+    top:-12.5rem;
+  }
+  .card{
+    gap: 3.75rem;
+    padding: 1.75rem 0.81rem 2.88rem 0.75rem;
+  }
+  .cards{
+    padding: 0 0 0 0;
+  }
+  .header{
+    gap: 0.31rem;
+    text-align: left;
+    width: auto;
+    height: auto;
+  }
+  .header p{
+    text-align: left;
+    font-size: 2.5rem;
+    line-height: 3rem; /* 180% */
+  }
+  .header span{
+    text-align: left;
+    font-size: 1.19rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (max-width: 430px){
+  .header{
+    gap: 0.31rem;
+    text-align: left;
+    max-width: 22.1875rem;
+    width: auto;
+  }
+}
+@media screen and (max-width: 400px){
+  .container{
+    width: auto;
+  }
+  .header p {
+    color: #fff;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 700;
+  }
+  .header span {
+    color: rgba(255, 168, 15, 0.98);
+    text-align: left;
+    font-family: Poppins;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+}

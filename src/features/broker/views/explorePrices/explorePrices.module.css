@@ -1,0 +1,347 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.96px;
+  margin-bottom: 4.25rem;
+}
+.searchContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.62rem;
+}
+.dropdown {
+  width: 28rem;
+  height: 5.0625rem;
+  border-radius: 2.5rem;
+  border: 1px solid rgba(99, 87, 67, 0.98);
+  background-color: #191e23;
+  padding: 0.94rem 1.63rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item {
+  width: 8.3125rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.25rem;
+  color: rgba(255, 255, 255, 0.98);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.itemSelect {
+  border-radius: 1.875rem;
+  background: rgba(255, 168, 15, 0.98);
+  width: 7rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.searchRight{
+  position: relative;
+}
+.search {
+  width: 29.375rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-radius: 1.25rem;
+  backdrop-filter: blur(126px);
+  border: 1px solid rgba(255, 168, 15, 0.98);
+  background: rgba(35, 34, 34, 1);
+  padding: 1.19rem;
+  color: #fff;
+}
+.searchIcon{
+  position: absolute;
+  right: 1.19rem;
+  top: 0.7rem;
+}
+.bigCard {
+  width: 100%;
+  height: auto;
+  backdrop-filter: blur(126px);
+  background-color: rgb(35, 34, 34);
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Poppins;
+  border-radius: 1.25rem;
+  padding: 1.37rem;
+}
+.cardTitle {
+  display: flex;
+  width: 100%;
+  min-width: 1171px;
+  height: auto;
+  padding: 1.38rem;
+  margin-bottom: 3.62rem;
+  border-bottom: 1px solid rgba(158, 108, 20, 0.98);
+}
+.cardTitleItems {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+.cardsContainer {
+  width: 100%;
+  overflow-y: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 3.06rem;
+}
+.cardsContainer::-webkit-scrollbar {
+  height: 10px;
+}
+.cardsContainer::-webkit-scrollbar-thumb {
+  background-color: rgba(43, 41, 37, 0.98);  /* Color de la barra deslizante */
+  border-radius: 5px;  /* Bordes redondeados para la barra deslizante */
+}
+
+.cardsContainer::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(68, 65, 60, 0.98);  /* Color de la barra deslizante al pasar el mouse por encima */
+}
+.miniCard {
+  backdrop-filter: blur(126px);
+  background: rgba(43, 41, 37, 0.98);
+  width: 100%;
+  min-width: 1171px;
+  height: 5.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+.cripto{
+  display: flex;
+  width: 30%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.75rem;
+}
+.coinName{
+  width: 5rem;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+.coinInitials{
+  width: 5rem;
+  color: rgba(255, 168, 15, 0.98);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+.img{
+  max-width: 3.25rem;
+  max-height: 3.25rem;
+}
+.coinPrice{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 4.31rem;
+}
+.valorationDown{
+  width: 7.5rem;
+  color: rgba(237, 18, 18, 0.98);
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  }
+.valorationUp{
+  width: 7.5rem;
+  color: #0FC056;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.price{
+  color: rgba(255, 168, 15, 0.98);
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  width: 30%;
+}
+.priceArrow{
+  max-width: 1.875rem;
+  max-height: 1.875rem;
+  margin: 0.56rem;
+}
+.buy{
+  color: #65B1DB;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+.footer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.81rem;
+}
+.text {
+  color: #fafafa;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+}
+.seeMore {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.62rem;
+  cursor: pointer;
+  margin-right: 5.62rem;
+}
+.seeMore p {
+  color: rgba(255, 168, 15, 0.98);
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  padding-top: 0.7rem;
+  
+}
+@media screen and (max-width: 1200px) {
+  .title {
+    text-align: center;
+    /* max-width: 21.8125rem; */
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    letter-spacing: -0.045rem;
+  }
+  .dropdown {
+    width: 23.9rem;
+    height: 4.0625rem;
+    padding: 0.75rem 1rem;
+  }
+  .item {
+    width: 7.1875rem;
+  }
+  .search {
+    width: 20.9375rem;
+  }
+  .text {
+    font-size: 1.125rem;
+  }
+  .seeMore p {
+    font-size: 1rem;
+    
+  }
+}
+@media screen and (max-width: 840px){
+  .azteca{
+    display: none;
+  }
+  .title {
+    max-width: 21.8125rem;
+  }
+  .searchContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.63rem;
+  }
+  .dropdown{
+    order: 2;
+  }
+  .searchRight{
+    order: 1;
+  }
+  .bigCard{
+    align-items: flex-start;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    max-width: 23rem;
+  }
+  .seeMore{
+    margin: 0;
+  }
+}
+@media screen and (max-width: 445px){
+  .title {
+    width: 100%;
+  }
+  .dropdown{
+    width: 100%;
+  }
+  .searchRight{
+    width: 100%;
+  }
+  .search{
+    width: 100%;
+  }
+  .text{
+    text-align: end;
+  }
+}

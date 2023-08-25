@@ -1,0 +1,10 @@
+
+
+@media screen and (min-width: 2000px) {
+    .container{
+        display: flex;
+        height: 80vh;
+        align-items: center;
+    }
+}
+    

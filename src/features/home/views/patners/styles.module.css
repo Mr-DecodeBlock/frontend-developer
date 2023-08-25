@@ -1,0 +1,94 @@
+.container{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    box-shadow: #fff;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    max-width: 477px;
+    margin: 0 auto;
+    
+}
+
+.title p{
+    color: #FAFAFA;
+    font-family: Poppins;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.75rem;
+    letter-spacing: -0.06rem;
+}
+.title span{
+    font-weight: 700;
+}
+.conteinerSlider{
+   padding-bottom: 50px;
+   position: relative;
+}
+
+.imgDifusser {
+    position: absolute;
+    z-index: 10;
+    width: 20%;
+    height: 100%;
+}
+
+
+.slider{
+    width: 98%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.flash1 {
+    position: absolute;
+    top: -36px;
+    left: -40px;
+}
+
+.flash2 {
+    position: absolute;
+    top: 250px;
+    right: -43px;
+}
+.slider {
+    width: 98%;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider::before,
+  .slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%; /* Ancho del área de desvanecimiento, ajusta según tus preferencias */
+    z-index: 2;
+  }
+  
+  .slider::before {
+    left: 0;
+    background-image: linear-gradient(to left, transparent, #171717);
+  }
+  
+  .slider::after {
+    right: 0;
+    background-image: linear-gradient(to right, transparent, #171717);
+  }
+
+  @media screen and (max-width: 640px){
+    .container{
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+  }

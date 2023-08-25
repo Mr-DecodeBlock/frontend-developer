@@ -1,0 +1,62 @@
+/* LanguageMenu.module.css */
+
+.languageMenu {
+    position: relative;
+  }
+  
+  .toggleButton {
+    background-color: rgba(31, 31, 31, 0.98);
+    color: #fff;
+    border: none;
+    border-radius: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 3.1875rem;
+    cursor: pointer;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 125%;
+    right: 0;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(255, 168, 15, 0.98);
+    background-color: rgba(36, 29, 29, 0.99);
+    z-index: 99;
+    padding: 1.5rem;
+  }
+  .item{
+    width: 12.5rem;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+  }
+  
+  .item:hover {
+    color: #ffa80f;
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* .menu li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .menu li:last-child {
+    border-bottom: none;
+  } */
+  
+  /* Estilos para el menú desplegable */
+  @media screen and (max-width: 1024px) {
+    .languageMenu {
+    padding: 1rem 0;
+  }
+  .menu {
+    top: 85%;}
+  }

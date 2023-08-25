@@ -1,0 +1,117 @@
+/*---Dispositivos moviles pequeños---*/
+
+.table {
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.tableComissions {
+    position: relative;
+    border-radius: 1rem;
+    margin: 0;
+    /* margin-top: 1rem; */
+    overflow: hidden;
+    background-color: #212121;
+}
+
+.tableComissions:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    padding: 3px;
+    border-radius: 1rem;
+    background: linear-gradient(to bottom,
+            rgba(255, 116, 15, 0.9804),
+            rgba(255, 213, 0, 0.22));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.tableComissions td {
+    color: var(--neutral-snow-snow-500, #FAFAFA);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-color: #212121;
+}
+
+.tableComissions th {
+    width: 5.7rem;
+    padding: 1rem 0.75rem;
+    background: rgba(255, 168, 15, 0.98);
+
+    color: #212121;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tableComissions tbody tr {
+    box-shadow: 0px -1px 0px 0px #E0E7ED;
+}
+
+.textTitle {
+    color: var(--neutral-snow-snow-500, #FAFAFA);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.5rem;
+    /* 180% */
+}
+
+.subTitle {
+    color: rgba(255, 168, 15, 0.98);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+    /* 120% */
+}
+
+.timelines {
+    display: none;
+}
+
+.timelinesText {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .timelines {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .timelinesText {
+        margin-top: 5rem;
+    }
+}
+
+/*---Dispositivos moviles y Tablet mediana---*/
+
+
+/*---Portatil Pequeña y Tablet Grande---*/
+
+
+/*---Portatil Pequeña---*/
+@media screen and (min-width: 992px) {
+    .textTitle {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+/*---Portatil Grande---*/

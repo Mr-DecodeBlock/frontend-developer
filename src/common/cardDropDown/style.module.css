@@ -1,0 +1,121 @@
+.containerTitles {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 100px; */
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+.titleOne {
+  display: flex;
+  width: 100%;
+  /* padding-left: 20px; */
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.titleTwo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.titleOne p {
+  color: rgba(255, 168, 15, 0.98);
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  /* 120% */
+}
+
+.titleTwo p {
+  color: var(--neutral-snow-snow-500, #FAFAFA);
+
+  /* Display LG/Bold */
+  font-family: Poppins;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem;
+  /* 125% */
+  letter-spacing: -0.06rem;
+}
+
+.paragraph {
+  color: var(--neutral-snow-snow-500, #FAFAFA);
+  font-family: Lato;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+  /* 123.077% */
+}
+
+.mail {
+  color: var(--neutral-snow-snow-500, rgba(255, 168, 15, 0.98));
+  font-family: Lato;
+  font-size: 1.3rem;
+  font-style: normal;
+  padding: 0;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 513px; */
+    height: 280px;
+  }
+
+  .titleOne {
+    display: flex;
+    width: 100%;
+    padding-left: 20px;
+    text-align: left;
+    align-items: center;
+  }
+
+  .titleTwo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .titleOne p {
+    color: #ffa80f;
+    font-size: 20px;
+    font-family: Poppins;
+  }
+
+  .titleTwo p {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+  }
+
+  .mail {
+    font-size: 1.625rem;
+  }
+}

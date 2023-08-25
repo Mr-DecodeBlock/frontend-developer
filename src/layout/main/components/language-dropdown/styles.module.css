@@ -1,0 +1,51 @@
+.container {
+  position: relative;
+  border-radius: 0.75rem;
+  /* margin: 0.1rem; */
+  border: none;
+  background: var(--background);
+  height: 2.9375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.875rem;
+}
+.button {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.language path {
+  fill: var(--primary-orange-orange-400, #FFB93F);
+}
+
+.content {
+  position: absolute;
+  right: 0;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(255, 168, 15, 0.98);
+  background-color: rgba(36, 29, 29, 0.99);
+  z-index: 99;
+  padding: 1.5rem;
+  width: auto;
+  top: 200%;
+  transition: 0.9s ease-in-out;
+}
+
+.languageText {
+  color: white
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+   background: rgba(31, 31, 31, 0.98);
+  }
+
+  .language path {
+    fill: var(--primary-orange-orange-400, #FFF);
+  }
+}

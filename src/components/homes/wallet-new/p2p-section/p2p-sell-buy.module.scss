@@ -1,0 +1,25 @@
+.button
+{
+    padding: 1rem;
+    color: #FFFFFFFA;
+    background-color: #E29204FA;
+}
+
+.left-button
+{
+    @extend .button;
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+}
+
+.right-button
+{
+    @extend .button;
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
+
+.active
+{
+    background-color: #FFA80FFA;
+}

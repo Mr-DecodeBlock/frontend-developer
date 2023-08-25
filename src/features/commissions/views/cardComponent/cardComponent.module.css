@@ -1,0 +1,108 @@
+/*---Dispositivos moviles pequeños---*/
+.flash1 {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+
+.cardComponent {
+  width: 100%;
+  padding: 100px;
+  background-color: rgba(33, 33, 33, 0.4);
+  position: relative;
+  z-index: 0;
+  gap: 4.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Poppins;
+  border-radius: 22px;
+  padding: 1.25rem 0.75rem;
+  box-shadow: 0 4px 53px rgba(255, 168, 15, 0.1);
+}
+
+.cardComponent:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 1px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 116, 15, 0.9804),
+    rgba(255, 213, 0, 0.22)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.containerText {
+  position: relative;
+  display: flex;
+  /* width: 21.3125rem; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.containerText h1 {
+  color: var(--neutral-snow-snow-500, #fafafa);
+  text-align: center;
+
+  /* Display LG/Bold */
+  font-family: Poppins;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem;
+  /* 125% */
+  letter-spacing: -0.06rem;
+}
+
+.containerText p {
+  color: rgba(255, 168, 15, 0.98);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  /* 120% */
+}
+
+.tables {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .tables {
+    width: 100%;
+    gap: 4.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Poppins;
+  }
+}
+
+/*---Dispositivos moviles y Tablet mediana---*/
+
+/*---Portatil Pequeña y Tablet Grande---*/
+
+/*---Portatil Pequeña---*/
+@media screen and (min-width: 992px) {
+  .cardComponent {
+    padding: 6.25rem;
+  }
+
+  .containerText h1 {
+    font-size: 3.75rem;
+    line-height: 4.5rem; /* 120% */
+  }
+}
+
+/*---Portatil Grande---*/

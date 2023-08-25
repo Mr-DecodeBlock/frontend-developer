@@ -1,0 +1,9 @@
+.container{
+    /*padding: 4% 10%;*/
+    padding-top: 4%;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

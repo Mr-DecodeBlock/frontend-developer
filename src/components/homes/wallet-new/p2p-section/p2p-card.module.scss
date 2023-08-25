@@ -1,0 +1,25 @@
+.p2p-card
+{
+    margin: 40px auto;
+    background-color: #F5F7FE;
+    padding: 2.5rem;
+    border-radius: 1.375rem;
+    text-align: left;
+    display: flex;
+    flex-grow: 1;
+    gap: 1.5rem;
+
+    &__left
+    {
+        flex-basis: 30%;
+        align-self: center;
+    }
+
+    &__right
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        flex-basis: 70%;
+    }
+}

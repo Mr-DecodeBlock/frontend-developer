@@ -1,0 +1,7 @@
+export * from './sectionArchitecture/sectionArchitecture'
+export * from './revolutionComerce/revolutionCommerce'
+export * from './allPaymentMethods/allPaymentMethods'
+export * from './sectionCryptoTrading/sectionCryptoTrading'
+export * from './operationsP2P/operationsP2P'
+export * from './sectionWallet/sectionWallet'
+export * from './boostYourCapital/boostYourCapital'

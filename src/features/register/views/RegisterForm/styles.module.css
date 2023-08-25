@@ -1,0 +1,272 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3.5rem;
+  gap:2rem;
+}
+.containerLeft{
+  margin-left: 3rem;
+}
+.titleContainer {
+  display: flex;
+  width: 100%;
+  padding-top: 1rem;
+}
+.title{
+  color: #fff;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.title span {
+  color: #faa50f;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.dateForm {
+  display: flex;
+  gap: 0.5rem;
+}
+.backgraund {
+  position: absolute;
+  bottom: -20rem;
+  z-index: 0;
+  opacity: 0.2;
+}
+.formContainer {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.card {
+  margin-right: 3rem;
+  width: 38.5625rem;
+  height: 65rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 5.19rem 7.06rem;
+}
+.label {
+  color: #fff;
+}
+.worldContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 80%;
+  align-items: center;
+
+}
+
+.worldContainer img {
+  scale: 1;
+}
+.toast{
+  position: absolute;
+  display: flex;
+  width: 32.125rem ;
+  height: 7.125rem ;
+  flex-shrink: 0 ;
+  border-radius: 1.25rem ;
+  border: 1px solid rgba(255, 168, 15, 0.98) ;
+  background: #292828;
+  right: 5rem;
+  top: 1rem;
+  z-index: 50;
+  align-items: center;
+  color: #fff;
+  padding-left: 3rem;
+}
+
+.timeRemaining {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.resendCode{
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.resendCode p{
+  color:#faa50f;
+  cursor: pointer;
+}
+
+.resendCode:disabled{
+  color: gray;
+}
+
+.resendCode:disabled p {
+  color: gray;
+  cursor: not-allowed;
+}
+
+.logoContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.customButton {
+  background-color: rgba(255, 168, 15, 0.98);
+  border: none;
+  color: #fff;
+  width: 100%;
+  height: 3rem;
+}
+.customButton:hover {
+  background-color: rgba(255, 168, 15, 0.8);
+}
+.customCheck {
+  border: none;
+  color: #fff;
+}
+.field {
+  display: flex;
+  width: 100%;
+  height: 3rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+.forgetPassword {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.checkContainer {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.checkContainer p {
+  cursor: pointer;
+  color: #fff;
+}
+.titleForm p{
+  color: #fff;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+.buttonEye{
+  height: 3rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color:#ffffff;
+  border-color: #faa50f;
+  background-color:#faa50f;
+}
+.register {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+.register p{
+  color: #fff;
+}
+.register span {
+  color: #faa50f;
+  cursor: pointer;
+}
+.insertCode{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .containerLeft {
+    padding-top: 2rem;
+  }
+  .formContainer {
+   padding-top: 3rem;
+  }
+  .card {
+    margin-right: 3rem;
+    width: 30rem;
+    height: 65rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 2rem 2rem;
+  }
+}
+@media (max-width: 1000px) {
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 3.5rem;
+}
+.formContainer {
+  display: flex;
+  padding-top: 3rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0;
+ }
+ .card{
+  margin-right: 0rem;
+ }
+ .containerLeft{
+  margin-left: 0rem;
+}
+.titleContainer {
+  display: flex;
+  width: 100%;
+  padding: 2rem 2rem;
+  justify-content: center;
+} 
+.worldContainer {
+  margin-top: 0rem;
+  padding: 2rem 2rem;
+}
+}
+@media (max-width: 550px) {
+  .titleContainer {
+    display: flex;
+    width: 100%;
+    padding: 2rem 2rem;
+    justify-content: center;
+  } 
+  .title{
+    font-size: 2.9rem;
+  }
+  .title span {
+    font-size: 3rem;
+  }
+  .card {
+    margin-right: 0rem;
+    width: auto;
+    height: 65rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 2rem 2rem;
+  }
+} 

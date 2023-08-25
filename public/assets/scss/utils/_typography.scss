@@ -1,0 +1,43 @@
+// font url
+
+// $font-url: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap';
+
+// font family
+// $font-family: (
+//     'ff': (
+//         'body': "'Poppins', sans-serif",
+//         'heading': "'Poppins', sans-serif",
+//         'fontawesome': "Font Awesome 5 Pro",
+//         'mont': "'Poppins', sans-serif",
+//         'urban': "'Poppins', sans-serif",
+//         'dm': "'Poppins', sans-serif",
+//     )
+// );
+
+// URL de la primera fuente (Poppins)
+$font-url-poppins: "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap";
+
+// URL de la segunda fuente (Lato)
+$font-url-lato: "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap";
+
+// Definir las fuentes
+$font-family: (
+  "ff": (
+    "body": "'Poppins', sans-serif",
+    "heading": "'Poppins', sans-serif",
+    "fontawesome": "Font Awesome 5 Pro",
+    "mont": "'Poppins', sans-serif",
+    "urban": "'Poppins', sans-serif",
+    "dm": "'Poppins', sans-serif",
+  ),
+  "ff-lato": (
+    "body": "'Lato', sans-serif",
+    "heading": "'Lato', sans-serif",
+    "fontawesome": "Font Awesome 5 Pro",
+    "mont": "'Lato', sans-serif",
+    "urban": "'Lato', sans-serif",
+    "dm": "'Lato', sans-serif",
+  ),
+);
+
+// Importar ambas fuentes

@@ -1,0 +1,255 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  gap: 1.94rem;
+  margin-bottom: 11.25rem;
+}
+.subContainerLeft {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subContainerRight {
+  display: flex;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+.darkColor{
+  background-color: rgb(23, 23, 23);
+  border-radius: 10px;
+  z-index: 1;
+}
+.image {
+  display: flex;
+}
+.cardRight {
+  background-color: --background;
+  backdrop-filter: blur(126px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(22, 22, 21, 0.01);
+  max-width: 35.5625rem;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.75rem;
+  padding: 5rem 3.44rem 5rem 5.69rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 53px rgba(255, 168, 15, 0.1);
+  height: auto;
+}
+.cardRight:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 1px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 116, 15, 0.9804),
+    rgba(255, 213, 0, 0.22)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.flash1 {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+}
+.flash2 {
+  position: absolute;
+  top: 250px;
+  right: -43px;
+}
+.createAccount {
+  display: flex;
+  justify-content: flex-start;
+  color: #ffa80f;
+  font-family: Lato;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+}
+.cardRightTitle{
+  color: #FAFAFA;
+  font-family: Poppins;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem;
+}
+.steps {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.step {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+.stepNumber {
+  display: flex;
+  align-items: center;
+}
+.stepNumber P {
+  color: #fafafa;
+  font-family: Lato;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.5rem; /* 125% */
+}
+.stepText P {
+  color: #fafafa;
+  font-family: Lato;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+}
+.yellowText {
+  color: #ffa80f;
+}
+.buttonContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btn {
+  font-family: Poppins;
+  font-size: 16px;
+  box-shadow: 10px 12px 40px rgba(255, 168, 15, 0.2);
+  justify-content: start;
+  border-color: #ffc027;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.btn:hover {
+  background-color: rgba(255, 168, 15, 0.5);
+  border-color: rgba(255, 168, 15, 0.5);
+}
+.footerText{
+  color: #FAFAFA;
+  font-family: Poppins;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 1370px) {
+  .cardRight {
+    padding: 3rem 4rem;
+    row-gap: 2rem;
+  }
+}
+@media (max-width: 1265px) {
+  .cardRight {
+    padding: 1.5rem 4rem;
+  }
+}
+
+@media (max-width: 1210px) {
+  .cardRight {
+    padding: 1.5rem 2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .flash2{
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48rem;
+  }
+  .subContainerLeft {
+    width: 100%;
+    
+  }
+  .subContainerRight {
+    width: 100%;
+    height: auto;
+  }
+  .cardRight{
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container{
+    margin-top: 48rem;
+  }
+  .cardRight {
+    padding: 3rem 4rem;
+    height: 100%;
+  }
+  
+  .steps {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 800px){
+  .cardRightTitle{
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    letter-spacing: -0.045rem;
+  }
+  .stepText P {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+}
+@media (max-width: 680px){
+  .container{
+    margin-top: 48rem;
+  }
+}
+@media (max-width: 550px) {
+  .container{
+    margin-top: 55rem;
+  }
+  .cardRight {
+    padding: 5rem 1.25rem;
+    height: auto;
+  }
+  .image {
+    min-width: none;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 500px){
+  .container{
+    margin-top: 58rem;
+  }
+}
+@media (max-width: 450px){
+  .container{
+    margin-top: 62rem;
+  }
+}

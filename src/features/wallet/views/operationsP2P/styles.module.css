@@ -1,0 +1,145 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5.6rem 6.25rem;
+  height: 100%;
+  row-gap: 130px;
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.titles {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  height: 150px;
+  width: 665px;
+  text-align: center;
+}
+.titles p {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.titles span {
+  color: rgba(255, 168, 15, 0.98);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+}
+.wpP2P {
+  position: absolute;
+  scale: 1.2;
+  right: -5rem;
+  top: 40rem;
+  z-index: 0;
+}
+@media screen and (max-width: 1550px) {
+  .container {
+    padding: 10%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .container {
+    padding: 5%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .container{
+    padding: 4.2rem 1rem;
+  }
+  .wpP2P {
+    position: absolute;
+    right: -2.4rem;
+    top: 1200px;
+    scale: 0.5;
+  }
+}
+@media screen and (max-width: 919px) {
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+.titles {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  /* height: 150px;
+  width: 70%;
+  text-align: left; */
+}
+.titles p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 2.5rem;
+}
+.titles span {
+  font-size: 1.25rem;
+}
+}
+
+/* @media screen and (max-width: 1500px) {
+    .container{
+   scale: 0.7;
+   padding: 1%;
+    }
+  } */
+
+  @media screen and (max-width: 780px) {
+    .container{
+      padding: 5.6rem 1rem;
+    }
+    .titles {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      height: 150px;
+      width: 70%;
+      /* text-align: left; */
+    }
+  }
+  @media screen and (max-width: 560px) {
+    .container {
+      row-gap: 30px;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      row-gap: 30px;
+    }
+    .titles {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      height: auto;
+      width: 100%;
+      text-align: left;
+    }
+    .titles p {
+      color: #fff;
+      font-family: Poppins;
+      font-size: 2.5rem;
+    }
+    .titles span {
+      font-size: 1.25rem;
+    }
+  }

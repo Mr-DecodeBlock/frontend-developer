@@ -1,0 +1,143 @@
+.margin {
+    position: relative;
+    padding: 0rem 7.19rem 0rem 7.19rem;
+    display: flex;
+    flex-direction: column;
+    /* gap: 9.25rem; */
+}
+
+.margin2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 9.25rem;
+    top: -2.5rem;
+}
+
+.developer {
+    padding: 6.25rem 0;
+}
+
+.azteca1 {
+    position: absolute;
+    left: -25rem;
+    top: 60rem;
+}
+
+.azteca2 {
+    position: absolute;
+    right: -51rem;
+    top: 121em;
+    scale: 0.7;
+    transform: rotate(-35deg);
+}
+
+.azteca3 {
+    position: absolute;
+    left: -15rem;
+    top: 194rem;
+}
+
+.azteca4 {
+    position: absolute;
+    right: -28rem;
+    bottom: 50rem;
+    height: 120rem
+}
+
+.azteca5 {
+    position: absolute;
+    scale: 0.65;
+    left: -51rem;
+    transform: rotate(-25deg);
+    bottom: -14rem;
+}
+
+.circule1 {
+    position: absolute;
+    right: -7rem;
+    top: 50rem;
+}
+
+.circule2 {
+    position: absolute;
+    top: 148em;
+    left: 45rem;
+}
+
+.circule3 {
+    position: absolute;
+    top: 184em;
+    left: -5rem;
+}
+
+.circule4 {
+    position: absolute;
+    top: 201em;
+    right: -3rem;
+}
+
+.circule5 {
+    position: absolute;
+    left: 15rem;
+    bottom: 118rem;
+}
+
+.circule6 {
+    position: absolute;
+    bottom: 44rem;
+    left: 40rem;
+}
+
+.circule7 {
+    position: absolute;
+    right: -5rem;
+    bottom: -3rem;
+    z-index: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .margin {
+        padding: 3rem 1.25rem 0rem 1.25rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .margin2 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 9.25rem;
+        top: 0rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .circule1 {
+        display: none;
+    }
+
+    .circule2 {
+        display: none;
+    }
+
+    .circule3 {
+        display: none;
+    }
+
+    .circule4 {
+        display: none;
+    }
+
+    .circule5 {
+        display: none;
+    }
+
+    .circule6 {
+        display: none;
+    }
+
+    .circule7 {
+        display: none;
+    }
+}

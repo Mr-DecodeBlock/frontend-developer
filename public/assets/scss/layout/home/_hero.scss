@@ -1,0 +1,80 @@
+@use "../../utils" as *;
+
+.home-hero-background {
+  background-color: #171717;
+}
+
+.home-hero-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home-hero-title-layout {
+  align-self: stretch;
+  text-align: center;
+}
+
+.home-hero-title-typography {
+  color: #fff;
+
+  /* H3/Bold */
+  font-family: Poppins;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+
+  @media #{$min-sm} {
+    font-size: 1rem;
+    line-height: 4.5rem;
+  }
+}
+
+.home-hero-title-rewards {
+  color: #FF9356;
+
+  /* H3/Bold */
+  font-family: Poppins;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+
+  @media #{$min-sm} {
+    font-size: 36px;
+    line-height: 4.5rem;
+  }
+}
+
+.home-hero-title-paragraph {
+  color: #fff;
+
+  /* Subtle 2/Regilar */
+  font-family: Poppins;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 120% */
+  text-align: center;
+}
+
+.home-hero-container {
+  width: 18.9375rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+
+  @media #{$min-sm} {
+    width: 22.9375rem;
+  }
+
+  @media #{$min-lg} {
+    width: 49.3125rem;
+  }
+}

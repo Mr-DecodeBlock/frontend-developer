@@ -1,0 +1,168 @@
+/* styles.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Centrar contenido verticalmente */
+  width: 100%;
+  min-height: 120px;
+  border-radius: 22px;
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+  transition: max-height 0.8s ease;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  /* background: #171717; */
+  backdrop-filter: blur(10px);
+  background-color: rgba(22, 22, 21, 1);
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  padding: 3px;
+  border-radius: 22px;
+  background: linear-gradient(to bottom,
+      rgba(255, 116, 15, 0.9804),
+      rgba(255, 213, 0, 0.22));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.titleContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.titleContainer span {
+  font-family: Poppins;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  z-index: 5;
+}
+
+.contentContainer {
+  /* Ajustar la altura automáticamente */
+  height: auto;
+  overflow: hidden;
+  transition: max-height 0.8s ease;
+  /* Utilizamos max-height para animar el despliegue */
+  width: 100%;
+  max-height: 0;
+  /* Inicialmente oculto */
+  border-radius: 0 0 22px 22px;
+  /* Redondea solo las esquinas inferiores */
+  font-size: 26px;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contentContainer p {
+  padding: 20px;
+  /* Agregar un poco de espacio interno */
+  color: #fff;
+  /* Letra blanca */
+  font-weight: 300;
+  background-color: transparent;
+  /* Fondo transparente */
+
+  color: var(--neutral-snow-snow-500, #FAFAFA);
+  font-family: Lato;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+/* Define los estilos cuando el contenido está abierto */
+.containerOpen {
+  max-height: 2000px;
+  /* Max-height para mostrar el contenido */
+  border-radius: 0px;
+}
+
+.containerOpen p{
+  max-height: 2000px;
+  /* Max-height para mostrar el contenido */
+  border-radius: 0px;
+  font-family: Lato;
+  font-size: 1.625rem;
+
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+  padding: 18px;
+}
+.containerOpen p{
+  max-height: 2000px;
+  /* Max-height para mostrar el contenido */
+  border-radius: 0px;
+  font-family: Lato;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+  padding: 18px;
+}
+
+@media (max-width:600px){
+  .contentContainer{
+    margin-top: 0;
+  }
+  .contentContainer p {
+    max-height: 2000px;
+    /* Max-height para mostrar el contenido */
+    border-radius: 0px;
+    font-family: Lato;
+    font-size: 1.3rem;
+  }
+  .contentContainer p {
+    max-height: 2000px;
+    /* Max-height para mostrar el contenido */
+    border-radius: 0px;
+    margin-left: 0;
+    padding: 0;
+    font-family: Lato;
+    font-size: 1.3rem;
+  }
+  .containerOpen p{
+    max-height: 2000px;
+    /* Max-height para mostrar el contenido */
+    border-radius: 0px;
+    font-family: Lato;
+    font-size: 1.3rem;
+  }
+  .containerOpen a{
+    max-height: 2000px;
+    /* Max-height para mostrar el contenido */
+    border-radius: 0px;
+    margin-left: 0;
+    padding: 0;
+    font-family: Lato;
+    font-size: 1.3rem;
+  }
+  .container {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 28px;
+  
+  }
+}

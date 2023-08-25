@@ -1,0 +1,32 @@
+.container {
+    position: relative;
+}
+
+.firstCoin {
+    position: absolute;
+    /* transform: rotate(-62deg); */
+    /* top: 23rem; */
+    right: -1rem;
+    z-index: 1;
+}
+
+.secondCoin {
+    position: absolute;
+    transform: rotate(-62deg);
+    top: 23rem;
+    right: -27rem;
+}
+
+.thirdCoin {
+    position: absolute;
+    transform: rotate(-62deg);
+    top: 23rem;
+    right: -27rem;
+}
+
+.flask {
+    position: absolute;
+    transform: rotate(-62deg);
+    top: 23rem;
+    right: -27rem;
+}

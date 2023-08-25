@@ -1,0 +1,269 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+
+}
+.titleContainer {
+  display: flex;
+  width: 100%;
+  padding-top: 1rem;
+  padding-left: 3rem;
+}
+.title {
+  color: #fff;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.backgraund {
+  position: absolute;
+  bottom: -22rem;
+  z-index: 0;
+  opacity: 0.2;
+}
+.title span {
+  color: #faa50f;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.formContainer {
+  z-index: 1;
+}
+.cardLogin {
+  margin-right: 3rem;
+  width: 38.5625rem;
+  height: 50.625rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 5.19rem 7.06rem;
+}
+.worldContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.logoContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.customButton {
+  background-color: rgba(255, 168, 15, 0.98);
+  border: none;
+  color: #fff;
+  width: 100%;
+  height: 3rem;
+}
+.customButton:hover {
+  background-color: rgba(255, 168, 15, 0.8);
+}
+.customCheck {
+  border: none;
+  color: #fff;
+}
+.field {
+  display: flex;
+  width: 100%;
+  height: 3rem;
+}
+.buttonEye{
+  height: 3rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color:#ffffff;
+  border-color: #faa50f;
+  background-color:#faa50f;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+.forgetPassword {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+.forgetPassword p {
+  cursor: pointer;
+  font-size: 0.8rem;
+  color:#faa50f;
+}
+.checkContainer {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.checkContainer p{
+    color: #fff;
+}
+.label{
+    color: #fff;
+}
+.titleForm {
+  margin-bottom: 3rem;
+}
+.titleForm p{
+  color: #fff;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.titleForm span {
+  color: #fff;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+.register {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 4rem;
+}
+.register p {
+    color: #fff;
+  }
+.register span {
+  color: #faa50f;
+  cursor: pointer;
+}
+
+.timeRemaining {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.resendCode{
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.resendCode p{
+  color:#faa50f;
+  cursor: pointer;
+}
+
+.resendCode:disabled{
+  color: gray;
+}
+
+.resendCode:disabled p {
+  color: gray;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1200px) {
+  .containerLeft {
+    padding-top: 2rem;
+  }
+  .formContainer {
+   padding-top: 3rem;
+  }
+  .cardLogin {
+    margin-right: 3rem;
+    width: 30rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 2rem 2rem;
+  }
+}
+@media (max-width: 1000px) {
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 3.5rem;
+}
+.formContainer {
+  display: flex;
+  padding-top: 3rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0;
+ }
+ .cardLogin{
+  margin-right: 0rem;
+  height: 42.37rem;
+ }
+ .containerLeft{
+  margin-left: 0rem;
+}
+.titleContainer {
+  display: flex;
+  width: 100%;
+  padding: 2rem 2rem;
+  justify-content: center;
+} 
+.worldContainer {
+  margin-top: 0rem;
+  padding: 0rem 0rem;
+}
+.register {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+}
+@media (max-width: 550px) {
+  .titleContainer {
+    display: flex;
+    width: 100%;
+    padding: 2rem 2rem;
+    justify-content: center;
+  } 
+  .title{
+    font-size: 2.9rem;
+  }
+  .title span {
+    font-size: 3rem;
+  }
+  .cardLogin {
+    margin-right: 0rem;
+    width: auto;
+    height: 42.37rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 2rem 2rem;
+  }
+  .container{
+    padding-bottom: 3rem;
+  }
+  .register {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+} 

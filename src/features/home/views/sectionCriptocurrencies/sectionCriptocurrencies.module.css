@@ -1,0 +1,129 @@
+.cryptocurrencies {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 70rem;
+    gap: 2rem;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+}
+
+.leftBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    gap: 2.5rem;
+}
+.pretitle {
+    color: rgba(255, 168, 15, 0.98);
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+.title {
+    color: #FAFAFA;
+    font-family: Poppins;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.75rem;
+    letter-spacing: -0.06rem;
+}
+
+
+.description {
+    color: rgba(250, 250, 250, 0.69);
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.btn {
+    font-family: Poppins;
+    font-size: 16px;
+    box-shadow: 10px 12px 40px rgba(255, 168, 15, 0.2);
+    justify-content: start;
+    border-color: #ffc027;
+}
+
+.btn:hover {
+    background-color: rgba(255, 168, 15, 0.5);
+    border-color: rgba(255, 168, 15, 0.5);
+}
+
+.rightBox {
+    width: 50%;
+    display: flex;
+}
+
+.imgDifusser {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .cryptocurrencies {
+        margin: 5.685rem 0rem;
+        flex-direction: column;        
+    }
+
+    .rightBox {
+        width: 80%;
+    }
+
+    .leftBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .conteinerSlider {
+        display: flex;
+    }
+
+    .slider {
+        width: 50%;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .cryptocurrencies {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .leftBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+        width: 90%;
+    }
+
+    .title {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .description {
+        font-size: 24px;
+        font-family: Poppins;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 14px;
+    }
+}
